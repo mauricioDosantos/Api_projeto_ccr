@@ -74,11 +74,9 @@ WSGI_APPLICATION = 'manager.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-default_db = 'sqlite:///' + PurePath(BASE_DIR, 'db.sqlite3')
-
 DATABASES = {
     'default': {
-        'ENGINE': config('ENGINE', default=default_db, cast=parse),
+        'ENGINE': config('ENGINE', cast=parse),
         'NAME': config('NAME'),
         'USERNAME': config('USERNAME'),
         'PASSWORD': config('PASSWORD'),

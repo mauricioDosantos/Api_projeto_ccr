@@ -14,6 +14,7 @@ from pathlib import Path, PurePath
 from dj_database_url import parse
 from decouple import config
 import django_heroku
+import os
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
@@ -127,4 +128,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = PurePath(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

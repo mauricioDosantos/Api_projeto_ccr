@@ -3,7 +3,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 
 
-@api_view(('GET',))
+@api_view(('POST',))
 @renderer_classes((JSONRenderer,))
 def home(request):
     """

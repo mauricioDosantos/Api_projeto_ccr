@@ -61,9 +61,7 @@ def api_watson(request):
         for index, lista in enumerate(list_feat):
             for item in lista:
                 result = percorrer_dic_lis(texts, item)
-                print(result)
                 if result:
-                    print(index)
                     if index == 0:
                         ponto_tubarao += 1
                     elif index == 1:

@@ -30,8 +30,7 @@ def api_watson(request):
 
     # checa se a requisição é de método POST
     if request.method == "POST":
-        list = dict(request.data).get(' name')
-        text = list[0][11:-47]
+        text = dict(request.data).get('text')
 
         # manda os dados para o serviço da IBM Watson e recebe um JSON
         response = natural_language_understanding.analyze(text=text,

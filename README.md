@@ -10,5 +10,4 @@ Dependências de desenvolviemto:
 
 Descrição do projeto
 ===================================
-Este protótipo de API tem a funcionalidade de retornar uma das seguintes personalidades: butarão, gato, águia, lobo, misto, decisão tomada com base no retorno da inteligência Natural Language Understanding da IBM. As informações recebidas pela API são no formato
-JSON e enviadas no formato JSON. Protótipo compara caracteristicas pré-definidas das personalidade.
+Este protótipo de API tem a funcionalidade de retornar uma das seguintes personalidades: butarão, gato, águia, lobo, misto, estas personalidades tomadas com base em pesquisas na área. O algoritimo toma decisão com base no retorno da inteligência Natural Language Understanding da IBM. As informações recebidas pela API são no formato JSON e enviadas no formato JSON. Protótipo compara caracteristicas pré-definidas das personalidade.
